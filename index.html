@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="src/css/frontendmentor.css">
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+  <div id="boxes">
+    <section class="box" id="box1">
+      <img id="starIcon" src="src/images/icon-star.svg" alt="star icon">
+
+      <p id="textTitle">How did we do?</p>
+
+      <p id="textParagraph">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+
+      <div id="buttons-avaliable">
+
+        <input class="avaliable" id="btn1" onclick="avaliar(0)" type="button" value="1">
+        <input class="avaliable" id="btn2" onclick="avaliar(1)" type="button" value="2">
+        <input class="avaliable" id="btn3" onclick="avaliar(2)" type="button" value="3">
+        <input class="avaliable" id="btn4" onclick="avaliar(3)" type="button" value="4">
+        <input class="avaliable" id="btn5" onclick="avaliar(4)" type="button" value="5">
+        
+      </div>
+      <input type="button" value="Submit" id="submit" onclick="submit()">
+    </section>
+
+    <section class="box close" id="box2">
+      <div class="box-image">
+        <img src="src/images/illustration-thank-you.svg" alt="illustration thank you">
+      </div>
+
+      <div id="thank-you">
+        <p id="res">You selected out 4 of 5</p>
+        <p id="thank">Thank you!</p>
+        <p id="paragraph">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+      </div>
+    </section>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Igor Silva Santana</a>.
+  </div>
+
+  <script src="src/js/index.js"></script>
+</body>
+</html>
